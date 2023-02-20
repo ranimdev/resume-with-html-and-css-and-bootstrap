@@ -1,0 +1,302 @@
+
+body{
+    font-family:'Poppins';
+}
+h1, h2,h4,h5,h6{
+    font-family:'Montserrat' ;
+}
+h3{
+    font-family: 'Montserrat', sans-serif;
+
+}
+:root{
+    --dark-color:#1c1c1c;
+}
+
+/* s t a r t   h e a d e r  s e c t i o n  */
+nav img{
+    width: 7%;
+}
+.home{
+    background-image: url(../img/bg.jpg);
+    background-position:center center ;
+    background-size: cover;
+    /* background-color: rgba(0,0,0 ,0.7); */
+}
+.home li{
+    position: relative;
+    color: #fff;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+}
+.home li a {
+    font-size: small;
+}
+
+.navbar-nav .nav-link.active::after{
+ content:"";
+ height: 1px !important;
+ width: 100%;
+ background-color: black;
+ position: absolute;
+ top: 30px;
+ left: 0;
+}
+
+.home_caption h1::after{
+    content: "|";
+    animation-name:moveletters ;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    font-weight: bolder;
+}
+.home_caption h1{
+    font-weight: 700;
+}
+
+@keyframes moveletters {
+    0%{content: "  L|";}
+    3%{content: "  La|";}
+    6%{content: "  Lar| ";}
+    9%{content: "  Larr|";}
+    12%{content: "  Larry |";}
+    15%{content: "  Larry D|";}
+    18%{content: "  Larry Da|";}
+    21%{content: "  Larry Dan|";}
+    24%{content: "  Larry Dani|";}
+    27%{content: "  Larry Danie|";}
+    30%{content: "  Larry Daniel|";}
+    33%{content: "  Larry Daniels|";}
+    36%{content: "  Larry Daniel|";}
+    39%{content: "  Larry Danie|";}
+    42%{content: "  Larry Dani|";}
+    45%{content: "  Larry Da|";}
+    48%{content: "  Larry D|";}
+    51%{content: "  Larry |";}
+    54%{content: "  Larr|";}
+    57%{content: "  Lar|";}
+    60%{content: "  La|";}
+    63%{content: "  L|";}
+    66%{content: "  |";}
+}
+.home .home_caption .ico i{
+    width: 2rem;
+    height: 2rem;
+    padding-top: 0.3rem;
+    background-color: rgba(0,0,0 ,0.3);
+    border-radius: 50%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+   
+}
+/* e n d   h e a d e r  s e c t i o n  */
+
+/*  s t a r t   h e r o  s e c t i o n */
+.hero .hero_img{
+    padding:0 0 0 30px;
+    position: relative;
+}
+.hero .hero_img::after{
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+.hero .content .skills p {
+    font-size: 17px;
+}
+.hero .button .download:hover{
+    background-color: white !important;
+    color: black !important;
+}
+.hero .button .contact:hover{
+    background-color: black;
+    color: white;
+}
+
+/*  e n d   h e r o  s e c t i o n */
+
+/*  s t a r t  S e r v i c e s  s e c t i o n  */
+.title_section h2{
+    font-weight: 900;
+    font-size: 40px;
+    position: relative;
+    display: inline-block;
+    z-index: 4;
+    color: #343434;
+}
+.title_section h2::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: -1;
+}
+.services .item .icon i{
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    font-size: 30px;
+    transition: all 0.5s;
+    padding-top: 1.2rem;
+}
+.services .services_item .item:hover .icon i{
+    background-color: black !important ;
+    color: #ccc;
+    transition: all  0.5s;
+}
+/*  e n d  S e r v i c e s  s e c t i o n  */
+
+/*  s t a r t   p o r t f o l i o   s e c t i o n */
+.work .work_content{
+    margin: 0% 15px;
+    color: #222;
+    position: relative;
+    z-index: 2;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.work .work_content ul li button:active{
+    width: 95%;
+}
+.work .work_content ul li button::after{
+   content: "";
+   height: 2px;
+   background: #111;
+   position: absolute;
+   left: 0;
+   bottom: -5px;
+   transition: all 0.4s;
+   z-index: -1;
+   
+}
+.work .tab_layer{
+    transition: all 0.8s;
+    top: 100%;
+}
+.work .tab_item {
+    overflow: hidden;
+}
+.work .tab_item:hover .tab_layer {
+    top: 0;
+    opacity: 1;
+}
+.work .tab_layer:hover{
+   opacity: 6 !important;
+   border: 7px solid #ccc;
+
+}
+.ico_portfolio i{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+    padding-top: 9px;
+}
+.ico_portfolio i:hover{
+    background-color: white;
+    color: black;
+    transition: all 0.5s;
+}
+
+/* e n d   p o r t f o l i o   s e c t i o n */
+
+/*  s t a r t   c l i e n ts   s e c t i o n */
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background-color: #869791;
+
+}
+.carousel-inner .carousel-item p{
+    color: #748182;
+    font-size: 15px;
+    line-height: 1.7;
+    font-size: 19px;
+}
+.carousel-inner .carousel-item span{
+    color: #748182;
+    font-size: small;
+}
+
+/* e n d   c l i e n ts   s e c t i o n */
+
+/* s t a r t   C o u n t e r  s e c t i o n  */
+.counter i{
+    color: #343434;
+}
+.counter p{
+    color: #748182;
+    font-size: small;
+}
+/* e n d   C o u n t e r  s e c t i o n */
+
+/*  s t a r t  b l o g  s e c t i o n */
+.blog .carousel-inner .h6{
+    font-size:xx-small;
+}
+.blog .carousel-inner .h6 a{
+    font-size: xx-small;
+}
+
+.img_blog{
+    overflow: hidden;
+}
+.blog .carousel-inner .card_img:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease;
+}
+/*  e n d   b l o g   s e c t i o n */
+
+/*  s t a r t  c o n t a c t  s e c t i o n  */
+.contact i{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    font-size: 1rem;
+    border: 1px solid white;
+    color: black;
+    background-color: #f8f9fa;
+}
+.contact .contact_ico:hover i{
+    background-color: black;
+    color: #f8f9fa;
+    transition: all 0.5s;
+}
+.contact h6{
+    font-size: smaller;
+}
+.contact p{
+    font-size: smaller;
+}
+.contact button{
+    font-size: small;
+    color: #f8f9fa;
+}
+.contact button:hover{
+    color:black;
+    background-color: #f8f9fa !important;
+}
+
+/*  e n d  c o n t a c t  s e c t i o n  */
+
+.footer_content{
+    background-color: #1c1c1c;
+    color: white;
+}
